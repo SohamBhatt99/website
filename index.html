@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ro website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section id="banner">
+      <img src="images/KENT_Healthcare_Logo.jpg" class="logo" />
+      <div class="banner-text">
+        <h1>Kent RO System</h1>
+        <p>Indian healthcare products company</p>
+        <div class="banner-btn">
+            <a href="#"><span></span>Find Out</a>
+            <a href="#"><span></span>Read More</a>
+        </div>
+      </div>
+    </section>
+    <div id="sidenavigation">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">TESTIMONIALS</a></li>
+                <li><a href="#">MEET US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menu-btn">
+        <img src="images/menu.png" id="menu">
+    </div>
+    <script>
+        var menubtn = document.getElementById("menu-btn")
+        var sidenavigation = document.getElementById("sidenavigation")
+        var menu= document.getElementById("menu")
+
+        menubtn.onclick = function(){
+            if(sidenavigation.style.right =="-250px"){
+                sidenavigation.style.right = "0";
+            }
+            else{
+                sidenavigation.style.right = "-250px";
+            }
+        }
+    </script>
+  </body>
+</html>
